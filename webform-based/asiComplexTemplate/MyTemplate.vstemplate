@@ -1,0 +1,33 @@
+<VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>iMIS iPart</Name>
+    <Description>A project to create an iMIS iPart.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>iPart</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.csproj" File="$safeprojectname$.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Common.cs">$safeprojectname$Common.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Display.ascx">$safeprojectname$Display.ascx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Display.ascx.cs">$safeprojectname$Display.ascx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Display.ascx.designer.cs">$safeprojectname$Display.ascx.designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$ConfigEdit.ascx">$safeprojectname$ConfigEdit.ascx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$ConfigEdit.ascx.cs">$safeprojectname$ConfigEdit.ascx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$ConfigEdit.ascx.designer.cs">$safeprojectname$ConfigEdit.ascx.designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Help.htm">$safeprojectname$Help.htm</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Deploy_iPart.bat">Deploy_iPart.bat</ProjectItem>
+      <Folder Name="App_Data" TargetFolderName="App_Data" />
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
