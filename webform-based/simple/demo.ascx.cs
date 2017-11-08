@@ -10,7 +10,7 @@ namespace DemoNamespace
     {
         public string html =  "<h1>Your Query Output</h1>";
 
-        protected override void OnPreRender(EventArgs e)
+        protected override void Page_Load(EventArgs e)
         {
             // for access when user us un-authenticated (GUEST, not logged in)
             // uncomment next 3 lines, and remove or comment out the 4th
@@ -43,7 +43,7 @@ namespace DemoNamespace
 
         }
 
-        protected void Page_Load(object sender, EventArgs e)
+        protected void OnPreRender(object sender, EventArgs e)
         {
             ExampleCurrentUser.Text = "<h2>Some data that may be useful</h2>"
                 + "for reference, the output of Asi.AppContext.CurrentIdentity.LoginUserId: " + Asi.AppContext.CurrentIdentity.LoginUserId
